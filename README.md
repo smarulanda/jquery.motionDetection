@@ -12,7 +12,7 @@ Include the plugin _after_ the jQuery library:
 
 ## Usage
 
-Include a <video> and <canvas> element in your markup, each with the class `.motionDetection`.
+Include a `<video>` and `<canvas>` element in your markup, each with the class `.motionDetection`.
 ```html
 <body>
   <video class="motionDetection"></video>
