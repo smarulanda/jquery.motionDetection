@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Motion Detection</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="jquery.motionDetection.js"></script>
+</head>
+<body>
+	<p>Checking for motion...</p>
+	<ul></ul>
+
+	<video class="motionDetection"></video>
+	<canvas class="motionDetection"></canvas>
+
+	<script>
+		$("body").motionDetection({
+			onDetection: function() {
+				var date = new Date();
+				$("ul").append("<li>Motion detected at " + date.toLocaleTimeString() + "</li>");
+			}
+		});
+	</script>
+</body>
+</html>
