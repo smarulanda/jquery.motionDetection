@@ -34,6 +34,6 @@ When motion is detected, a supplied method can be triggered.
 | pollingFrequency | Integer | How often to check for motion (ms) | 1000 |
 | sampleWidth | Integer | The canvas width | 100 |
 | sampleHeight | Integer | The canvas height | 100 |
-| threshold | Decimal | Percentage of total pixels that must change (0-1) | 0.25 |
-| hide | Boolean | Hide the <video> and <canvas> elements | true |
+| threshold | Decimal | Percentage of total pixels that must change to trigger detection (0-1) | 0.25 |
+| hide | Boolean | Hide the `<video>` and `<canvas>` elements | true |
 | onDetection | Function | The function to call when motion is detected | function() { console.log("Motion detected!"); } |
